@@ -1,2 +1,13 @@
 #!/usr/bin/env node
-require('../src/index.js');
+
+// Import and run the main function
+const { main } = require('../src/index.js');
+
+if (require.main === module) {
+  try {
+    main();
+  } catch (err) {
+    process.stderr.write('Error: ' + err.message + '\n');
+    process.exit(1);
+  }
+}

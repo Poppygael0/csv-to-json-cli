@@ -129,5 +129,5 @@ if (require.main === module) {
   }
 }
 
-module.exports = { parseCSV, splitCSVLine };
+module.exports = { parseCSV, splitCSVLine, main };
 
